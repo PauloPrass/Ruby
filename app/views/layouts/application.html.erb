@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Livraria Online</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-dark">
+      <a class="navbar-brand" style='color:#FFF' href="/">Biblioteca Online</a>
+      <form class="form-inline">
+        <a style="color:#FFF;padding-right:10px"><%= @current_user != nil ? @current_user.email : "" %></a>
+          <a class="btn btn-outline-primary <%= @current_user != nil ? 'not_show' : 'show'%>" href="/login" role="button">Login</a>
+          <div style="padding-left: 10px;">
+            <a class="btn btn-outline-success <%= @current_user != nil ? 'show' : 'not_show'%>" href="/logout" role="button">Logout</a>
+          </div>
+      </form>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

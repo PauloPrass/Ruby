@@ -1,0 +1,11 @@
+<div class="container">
+
+    <h1>Novo Livro</h1>
+    <div class="div_black">
+        <%= render 'form', book: @book %>
+    </div>
+    <br>
+    <button type="button" class="btn btn-danger">
+        <%= link_to 'Voltar', books_path %>
+    </button>
+</div>

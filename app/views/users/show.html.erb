@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+<h1>Detalhes</h1>
+  <div class="div_black">
+  <p>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </p>
+
+  </div>
+  <br>
+  <button type="button" class="btn btn-dark">
+    <%= link_to 'Editar', edit_user_path(@user) %>
+  </button> |
+  <button type="button" class="btn btn-danger">
+    <%= link_to 'Voltar', users_path %>
+  </button>
+<div>

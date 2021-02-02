@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Editing Usuário</h1>
+
+    <div class="div_black">
+        <%= render 'form', user: @user %>
+    </div>
+    <br>
+    <button type="button" class="btn btn-dark">
+        <%= link_to 'Mostrar', @user %>
+    </button> |
+    <button type="button" class="btn btn-danger">
+        <%= link_to 'Voltar', users_path %>
+    </button>
+</div>

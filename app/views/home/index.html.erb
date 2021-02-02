@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+    <div class="container_books">
+        <div class="div_title">
+            <h1>Livros</h1>
+        </div>
+
+        <form class="div_title" action="/" method="get">
+            <input style="margin:5px" type="text" name="filter">
+            <button type="submit" style="margin:5px" class="btn btn-success"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="row"><%= sortable 'title' %></th>
+        <th scope="row">Descrição</th>
+        <th scope="row">Imagem</th>
+        <th scope="row"><%= sortable 'author' %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @books.each do |book| %>
+        <tr>
+          <td><%= book.title %></td>
+          <td><%= book.description %></td>
+          <td><%= image_tag book.url_image, width:70, height:100%></td>
+          <td><%= book.author %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+</div>

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+<h1>Detalhes</h1>
+  <div class="div_black">
+    <p>
+      <strong>Title:</strong>
+      <%= @book.title %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= @book.description %>
+    </p>
+
+    <p>
+      <strong>Url image:</strong>
+      <%= @book.url_image %>
+    </p>
+
+    <p>
+      <strong>Author:</strong>
+      <%= @book.author %>
+    </p>
+  </div>
+  <br>
+  <button type="button" class="btn btn-dark">
+    <%= link_to 'Editar', edit_book_path(@book) %>
+  </button> |
+  <button type="button" class="btn btn-danger">
+    <%= link_to 'Voltar', books_path %>
+  </button>
+</div>

@@ -1,0 +1,54 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.div_black{
+    background-color: #343a40;
+    color: #FFF !important;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.container{
+    text-align: center;
+}
+
+.container_books{
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+}
+
+.div_title{
+    width: 50%;
+    display: inline-flex;
+    justify-content: end;
+}
+
+.div_login{
+    border-style: groove;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.show{
+    display: inline-block;
+}
+
+.not_show{
+    display: none;
+}
+
+.pretty th .current {
+    padding-right: 12px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.pretty th .asc{
+    background-image: url(/online_library/app/assets/images/up-arrow.png);
+}
+
+.pretty th .desc{
+    background-image: url(/online_library/app/assets/images/down-arrow.png);
+}
