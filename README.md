@@ -43,6 +43,6 @@ Após o usuário logar com sucesso na aplicação ele é levado para a tela de l
 
 Nesta aplicação também é possível visualizar os usuários administradores cadastrados alterando a url da página conforme a imagem abaixo:
 
-![Usuários](https://github.com/PauloPrass/Ruby_Library/blob/master/git_images/usuários.png)
+![Usuários](https://github.com/PauloPrass/Ruby_Library/blob/master/git_images/usuarios.png)
 
 Essa é a Biblioteca Online, :)
