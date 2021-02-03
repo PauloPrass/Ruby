@@ -16,7 +16,7 @@ rails db:create db:migrate db:seed
 
 Como opção alguns testes de models utilizando spec podem ser executados antes de rodar a aplicação.
 Os mesmos se encontram no caminho abaixo:
-![Caminho teste](https://github.com/PauloPrass/Ruby_Library/blob/master/git_images/caminho_teste.png)
+![Caminho teste](https://github.com/PauloPrass/Ruby_Library/blob/master/git_images/caminho_testes.png)
 
 **Agora já podemos subir a aplicação rodando o comando "rails s".**
 
