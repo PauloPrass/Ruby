@@ -19,7 +19,7 @@ Os mesmos se encontram no caminho abaixo:<br>
 
 **Agora já podemos subir a aplicação rodando o comando "rails s".**
 
-Após subir a aplicação será visto no terminal o local para acessar ela.
+Após subir a aplicação será visto no terminal o local para acessar ela. <br>
 ![Caminho app](https://github.com/PauloPrass/Ruby_Library/blob/master/git_images/caminho_app.png)
 
 Na página inicial é possível observar a tabela com os livros disponíveis como também o input de pesquisa de livros, descrição ou autor. E um botão de login no canto superior direito para acesso como administrador. Como também ordenar os livros de forma crescente e descrescente através do Título e Autor no header de suas respectivas colunas.
