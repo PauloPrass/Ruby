@@ -10,7 +10,6 @@ Após o ambiente configurado, é necessário definir uma pasta para a instalaç�
 Com o projeto clonado entrar na pasta do projeto e rodar os comandos abaixo:
 ```sh
 bundle install
-yarn start
 rails db:create db:migrate db:seed
 ```
 
