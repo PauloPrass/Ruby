@@ -15,10 +15,10 @@
     <table class="table table-dark">
     <thead>
       <tr>
-        <th scope="row"><%= sortable 'title' %></th>
+        <th id="title" scope="row"><%= sortable 'title' %></th>
         <th scope="row">Descrição</th>
         <th scope="row">Imagem</th>
-        <th scope="row"><%= sortable 'author' %></th>
+        <th id="author" scope="row"><%= sortable 'author' %></th>
       </tr>
     </thead>
 
@@ -36,3 +36,8 @@
 
   <br>
 </div>
+
+<script>
+  document.getElementsByTagName('a')[4].innerHTML = "Título";
+  document.getElementsByTagName('a')[5].innerHTML = "Autor";
+</script>
